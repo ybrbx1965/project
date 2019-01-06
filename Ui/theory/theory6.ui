@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>934</width>
+    <height>772</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>120</red>
+        <green>120</green>
+        <blue>120</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Сегодня я по-быстрому пробегусь по всем ключевым словам в Python, а заодно и по модулю keyword. Все это запоминать не надо, в любой момент можно вернуться. Теста в этот раз не будет.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;id1&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;К&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;лючевые слова&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;False&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - ложь.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;True&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - правда.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;None&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - &amp;quot;пустой&amp;quot; объект.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;and&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - логическое И.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;with / as&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/with-as-menedzhery-konteksta.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;менеджер контекста&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;assert&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; условие - возбуждает исключение, если условие ложно.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;break&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - выход из цикла.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/obektno-orientirovannoe-programmirovanie-obshhee-predstavlenie.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;пользовательский тип&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;, состоящий из методов и атрибутов.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;continue&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - переход на следующую итерацию цикла.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - определение &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/vse-o-funkciyax-i-ix-argumentax.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;функции&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;del&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - удаление объекта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;elif&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - в противном случае, если.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - см. &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/cikly-for-i-while-operatory-break-i-continue-volshebnoe-slovo-else.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;for/else&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; или &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/instrukciya-if-elif-else-proverka-istinnosti-trexmestnoe-vyrazhenie-ifelse.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;if/else&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;except&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - перехватить исключение.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;finally&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - вкупе с инструкцией try, выполняет инструкции независимо от того, было ли исключение или нет.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - цикл for.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;from&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - импорт нескольких функций из модуля.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;global&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - позволяет сделать значение переменной, присвоенное ей внутри функции, доступным и за пределами этой функции.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/instrukciya-if-elif-else-proverka-istinnosti-trexmestnoe-vyrazhenie-ifelse.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;если&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;import&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - импорт модуля.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;in&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - проверка на вхождение.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;is&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - ссылаются ли 2 объекта на одно и то же место в памяти.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;lambda&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - определение анонимной функции.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;nonlocal&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - позволяет сделать значение переменной, присвоенное ей внутри функции, доступным в объемлющей инструкции.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;not&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - логическое НЕ.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;or&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - логическое ИЛИ.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;pass&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - ничего не делающая конструкция.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;raise&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - возбудить исключение.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - вернуть результат.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;try&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - выполнить инструкции, перехватывая &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/isklyucheniya-v-python-konstrukciya-try-except-dlya-obrabotki-isklyuchenij.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;исключения&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;while&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/cikly-for-i-while-operatory-break-i-continue-volshebnoe-slovo-else.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;цикл&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; while.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;yield&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - определение функции-генератора.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;id2&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;М&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;одуль keyword&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;В общем-то, keyword - не такой уж и модуль, но все же.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;keyword.kwlist&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - список всех доступных ключевых слов.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;keyword.iskeyword(строка)&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; - является ли строка ключевым словом.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;id2&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;В&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;строенные функции, выполняющие преобразование типов&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;bool&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - преобразование к типу bool, использующая стандартную процедуру &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/instrukciya-if-elif-else-proverka-istinnosti-trexmestnoe-vyrazhenie-ifelse.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;проверки истинности&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;. Если х является ложным или опущен, возвращает значение False, в противном случае она возвращает True.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;bytearray&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([источник [, кодировка [ошибки]]]) - преобразование к &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/bajty-bytes-i-bytearray.html#bytearray&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;bytearray&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;. Bytearray - изменяемая последовательность целых чисел в диапазоне 0≤X&amp;lt;256. Вызванная без аргументов, возвращает пустой массив байт.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;bytes&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([источник [, кодировка [ошибки]]]) - возвращает объект типа &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/bajty-bytes-i-bytearray.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;bytes&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;, который является неизменяемой последовательностью целых чисел в диапазоне 0≤X&amp;lt;256. Аргументы конструктора интерпретируются как для bytearray().&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;complex&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([real[, imag]]) - преобразование к &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/chisla-int-float-complex.html#complex&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;комплексному числу&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;dict&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - преобразование к &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;словарю&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;float&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([X]) - преобразование к &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/chisla-int-float-complex.html#float&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;числу с плавающей точкой&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;. Если аргумент не указан, возвращается 0.0.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;frozenset&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([последовательность]) - возвращает &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/mnozhestva-set-i-frozenset.html#frozenset&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;неизменяемое множество&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object], [основание системы счисления]) - преобразование к &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/chisla-int-float-complex.html#int&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;целому числу&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;list&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - создает &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/spiski-list-funkcii-i-metody-spiskov.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;список&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;memoryview&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - создает объект memoryview.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;object&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;() - возвращает безликий объект, являющийся базовым для всех объектов.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;range&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([start=0], stop, [step=1]) - арифметическая прогрессия от start до stop с шагом step.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;set&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - создает &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/mnozhestva-set-i-frozenset.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;множество&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;slice&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([start=0], stop, [step=1]) - объект среза от start до stop с шагом step.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;str&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object], [кодировка], [ошибки]) - строковое представление объекта. Использует метод __str__.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;tuple&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(obj) - преобразование к &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/kortezhi-tuple.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;кортежу&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;id3&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;Д&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;ругие встроенные функции&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;abs&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает абсолютную величину (модуль числа).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;all&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(последовательность) - Возвращает True, если все элементы истинные (или, если последовательность пуста).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;any&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(последовательность) - Возвращает True, если хотя бы один элемент - истина. Для пустой последовательности возвращает False.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;ascii&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object) - Как repr(), возвращает строку, содержащую представление объекта, но заменяет не-ASCII символы на экранированные последовательности.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;bin&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Преобразование целого числа в двоичную строку.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;callable&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает True для объекта, поддерживающего вызов (как функции).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;chr&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает односимвольную строку, код символа которой равен x.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;classmethod&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Представляет указанную функцию методом класса.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;compile&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(source, filename, mode, flags=0, dont_inherit=False) - Компиляция в программный код, который впоследствии может выполниться функцией eval или exec. Строка не должна содержать символов возврата каретки или нулевые байты.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;delattr&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object, name) - Удаляет атрибут с именем 'name'.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;dir&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - Список имен объекта, а если объект не указан, список имен в текущей локальной области видимости.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;divmod&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(a, b) - Возвращает частное и остаток от деления a на b.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;enumerate&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(iterable, start=0) - Возвращает итератор, при каждом проходе предоставляющем кортеж из номера и соответствующего члена последовательности.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;eval&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(expression, globals=None, locals=None) - Выполняет строку программного кода.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;exec&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object[, globals[, locals]]) - Выполняет программный код на Python.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;filter&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(function, iterable) - Возвращает итератор из тех элементов, для которых function возвращает истину.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;format&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(value[,format_spec]) - Форматирование (обычно &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/formatirovanie-strok-metod-format.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;форматирование строки&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;getattr&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object, name ,[default]) - извлекает атрибут объекта или default.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;globals&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;() - Словарь глобальных имен.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;hasattr&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object, name) - Имеет ли объект атрибут с именем 'name'.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;hash&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает хеш указанного объекта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;help&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - Вызов встроенной справочной системы.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;hex&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(х) - Преобразование целого числа в шестнадцатеричную строку.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object) - Возвращает &amp;quot;адрес&amp;quot; объекта. Это целое число, которое гарантированно будет уникальным и постоянным для данного объекта в течение срока его существования.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;input&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([prompt]) - Возвращает введенную пользователем строку. Prompt - подсказка пользователю.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;isinstance&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object, ClassInfo) - Истина, если объект является экземпляром ClassInfo или его подклассом. Если объект не является объектом данного типа, функция всегда возвращает ложь.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;issubclass&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(класс, ClassInfo) - Истина, если класс является подклассом ClassInfo. Класс считается подклассом себя.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;iter&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает объект итератора.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;len&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает число элементов в указанном объекте.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;locals&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;() - Словарь локальных имен.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;map&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(function, iterator) - Итератор, получившийся после применения к каждому элементу последовательности функции function.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;max&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(iter, [args ...] * [, key]) - Максимальный элемент последовательности.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;min&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(iter, [args ...] * [, key]) - Минимальный элемент последовательности.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;next&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x) - Возвращает следующий элемент итератора.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;oct&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(х) - Преобразование целого числа в восьмеричную строку.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;open&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(file, mode='r', buffering=None, encoding=None, errors=None, newline=None, closefd=True) - Открывает файл и возвращает соответствующий поток.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;ord&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(с) - Код символа.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;pow&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(x, y[, r]) - ( x ** y ) % r.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;reversed&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object) - Итератор из развернутого объекта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;repr&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(obj) - Представление объекта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object, ...], *, sep=&amp;quot; &amp;quot;, end='\n', file=sys.stdout) - Печать.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;property&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(fget=None, fset=None, fdel=None, doc=None)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;round&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(X [, N]) - Округление до N знаков после запятой.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;setattr&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(объект, имя, значение) - Устанавливает атрибут объекта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;sorted&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(iterable[, key][, reverse]) - Отсортированный список.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;staticmethod&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(function) - Статический метод для функции.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;sum&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(iter, start=0) - Сумма членов последовательности.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;super&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([тип [, объект или тип]]) - Доступ к родительскому классу.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(object) - Возвращает тип объекта.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(name, bases, dict) - Возвращает новый экземпляр класса name.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;vars&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;([object]) - Словарь из атрибутов объекта. По умолчанию - словарь локальных имен.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;zip&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;(*iters) - Итератор, возвращающий кортежи, состоящие из соответствующих элементов аргументов-последовательностей.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>640</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string>К следующему уроку</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p13">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p5">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p8">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>7 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p12">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>11 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p10">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p14">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>13 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p4">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p6">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p15">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>14 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p7">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Навигация&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p16">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p9">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p11">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>170</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;№ Вашего урока&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="l1">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>220</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>934</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

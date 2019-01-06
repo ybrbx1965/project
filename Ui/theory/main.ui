@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>935</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>26</red>
+        <green>13</green>
+        <blue>176</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>26</red>
+        <green>13</green>
+        <blue>176</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>120</red>
+        <green>120</green>
+        <blue>120</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>26</red>
+        <green>13</green>
+        <blue>176</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>26</red>
+        <green>13</green>
+        <blue>176</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#000000; background-color:#ffffff;&quot;&gt;Сегодня мы напишем свою первую программу в среде разработки IDLE.После &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/osnovy/skachat-python.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#000000; background-color:#ffffff;&quot;&gt;загрузки и установки python&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#000000; background-color:#ffffff;&quot;&gt; открываем IDLE (среда разработки на языке Python, поставляемая вместе с дистрибутивом).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Запускаем IDLE (изначально запускается в интерактивном режиме), после чего уже можно начинать писать первую программу. Традиционно, первой программой у нас будет &amp;quot;hello world&amp;quot;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Чтобы написать &amp;quot;hello world&amp;quot; на python, достаточно всего одной строки:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Вводим этот код в IDLE и нажимаем Enter. Результат виден на картинке:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Поздравляю! Вы написали свою&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;первую программу на python&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Разберемся поподробнее!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;В питоне существует два типа данных, это числа и строки. Вроде бы всё понятно, но что делать если надо представить число в виде строки? Тут нам помогут кавычки (одинарные или двойные, неважно). В кавычках пишется любой  текст. Ошибкой является написание строки без кавычек. Числа же пишутся строго без кавычек&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; print() это метод вывода на экран числа, строки, чего угодно. В скобках пишется то, что надо вывести&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;С интерактивным режимом мы немного познакомились, можете с ним ещё поиграться, например, написать&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;**&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Но, всё-таки, интерактивный режим не будет являться основным. В основном, вы будете сохранять программный код в файл и запускать уже файл.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Для того, чтобы создать новое окно, в интерактивном режиме IDLE выберите File → New File (или нажмите Ctrl + N).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;В открывшемся окне введите следующий код:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;name &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;input&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;&amp;quot;Как Вас зовут? &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;&amp;quot;Привет,&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, name)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Первая строка печатает вопрос (&amp;quot;Как Вас зовут? &amp;quot;), ожидает, пока вы не напечатаете что-нибудь и не нажмёте Enter и сохраняет введённое значение в переменной name.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;input() - метод ввода с экрана &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Во второй строке мы используем функцию print для вывода текста на экран, в данном случае для вывода &amp;quot;Привет, &amp;quot; и того, что хранится в переменной &amp;quot;name&amp;quot;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Теперь нажмём F5 (или выберем в меню IDLE Run → Run Module) и убедимся, что то, что мы написали, работает. Перед запуском IDLE предложит нам сохранить файл. Сохраним туда, куда вам будет удобно, после чего программа запустится.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Вы должны увидеть что-то наподобие этого (на скриншоте слева - файл с написанной вами программой, справа - результат её работы):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;Поздравляю! Вы научились писать простейшие программы, а также познакомились со средой разработки IDLE. Теперь можно немного отдохнуть, а потом начать изучать python дальше.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>640</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string>К тесту</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>110</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p4">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p5">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p6">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>110</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p7">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>110</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p8">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>130</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>7 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p9">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>130</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p10">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p11">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>130</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p12">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>11 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p13">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>150</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p14">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>170</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>13 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p15">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>170</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>14 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p16">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>170</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>30</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Навигация&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="l1">
+    <property name="geometry">
+     <rect>
+      <x>723</x>
+      <y>260</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>200</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;№ Вашего урока&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>935</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

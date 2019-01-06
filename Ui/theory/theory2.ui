@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>935</width>
+    <height>772</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>120</red>
+        <green>120</green>
+        <blue>120</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;Условная инструкция if-elif-else&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; (её ещё иногда называют оператором ветвления) - основной инструмент выбора в Python. Проще говоря, она выбирает, какое действие следует выполнить, в зависимости от значения переменных в момент проверки условия.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;if&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;С&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;интаксис инструкции if&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Сначала записывается часть if с условным выражением, далее могут следовать одна или более необязательных частей elif, и, наконец, необязательная часть else. Общая форма записи условной инструкции if выглядит следующим образом:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; test1:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    state1&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;elif&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; test2:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    state2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    state3&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;После условия, следует тело инструкции отодвинутый на 4 пробела&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Простой пример (напечатает 'true', так как 1 - истина):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;...&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;     &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'true'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;...&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;...&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;     &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'false'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;true&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Чуть более сложный пример (его результат будет зависеть от того, что ввёл пользователь):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;a &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;int&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;input&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;())&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; a &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'Low'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;elif&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; a &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'Mid'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'High'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Конструкция с несколькими elif может также служить отличной заменой конструкции switch - case в других языках программирования.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;python&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;П&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;роверка истинности в Python&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot; style=&quot; margin-top:0px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Любое число, не равное 0, или непустой объект - истина.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot; style=&quot; margin-top:0px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Числа, равные 0, пустые объекты и значение None - ложь&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot; style=&quot; margin-top:0px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Операции сравнения применяются к структурам данных рекурсивно&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot; style=&quot; margin-top:0px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Операции сравнения возвращают True или False&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot; style=&quot; margin-top:0px; margin-bottom:20px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Логические операторы and и or возвращают истинный или ложный объект-операнд&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Логические операторы:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;X &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;and&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; Y&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Истина, если оба значения X и Y истинны.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;X &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;or&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; Y&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Истина, если хотя бы одно из значений X или Y истинно.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;not&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; X&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Истина, если X ложно.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;if-else&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;Т&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;рехместное выражение if/else&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Следующая инструкция:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; X:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    A &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; Y&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    A &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; Z&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;довольно короткая, но, тем не менее, занимает целых 4 строки. Специально для таких случаев и было придумано выражение if/else:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;A &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; Y &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; X &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; Z&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;В данной инструкции интерпретатор выполнит выражение Y, если X истинно, в противном случае выполнится выражение Z.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;A &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'t'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;if&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'spam'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;else&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'f'&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;A&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;'t'&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>640</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string>К тесту</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p13">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p5">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p8">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>7 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p12">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>11 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p10">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p14">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>13 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p4">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p6">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p15">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>14 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p7">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Навигация&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p16">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p9">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p11">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>170</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;№ Вашего урока&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="l1">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>220</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>935</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

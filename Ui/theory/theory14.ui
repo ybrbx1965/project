@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>933</width>
+    <height>772</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>120</red>
+        <green>120</green>
+        <blue>120</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:10px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#ffffff;&quot;&gt;В этой статье я планирую рассказать о функциях, именных и анонимных, инструкциях def, return и lambda, обязательных и необязательных аргументах функции, функциях с произвольным числом аргументов.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;def&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;И&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;менные функции, инструкция def&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Функция в python - объект, принимающий аргументы и возвращающий значение. Обычно функция определяется с помощью инструкции &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Определим простейшую функцию:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;add&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(x, y):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; x &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; y&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Инструкция &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; говорит, что нужно вернуть значение. В нашем случае функция возвращает сумму x и y.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Теперь мы ее можем вызвать:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;add(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;10&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;11&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;add(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'abc'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'def'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;'abcdef'&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Функция может быть любой сложности и возвращать любые объекты (списки, кортежи, и даже функции!):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;newfunc&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(n):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;myfunc&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(x):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; x &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; n&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; myfunc&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;new &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; newfunc(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;100&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-style:italic; color:#408090;&quot;&gt;# new - это функция&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;new(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;200&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;300&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Функция может и не заканчиваться инструкцией return, при этом функция вернет значение &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/none.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;None&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;func&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;():&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;pass&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(func())&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;None&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;id2&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;А&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;ргументы функции&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Функция может принимать произвольное количество аргументов или не принимать их вовсе. Также распространены функции с произвольным числом аргументов, функции с позиционными и именованными аргументами, обязательными и необязательными.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;func&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(a, b, c&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;): &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-style:italic; color:#408090;&quot;&gt;# c - необязательный аргумент&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; a &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; b &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; c&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-style:italic; color:#408090;&quot;&gt;# a = 1, b = 2, c = 2 (по умолчанию)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;5&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-style:italic; color:#408090;&quot;&gt;# a = 1, b = 2, c = 3&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;6&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, b&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-style:italic; color:#408090;&quot;&gt;# a = 1, b = 3, c = 2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;6&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, c&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-style:italic; color:#408090;&quot;&gt;# a = 3, c = 6, b не определен&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#0044dd;&quot;&gt;Traceback (most recent call last):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#ff0000;&quot;&gt;  File &amp;quot;&amp;quot;, line 1, in&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#ff0000;&quot;&gt;    func(a=3, c=6)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#ff0000;&quot;&gt;TypeError&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;: func() takes at least 2 arguments (2 given)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Функция также может принимать переменное количество позиционных аргументов, тогда перед именем ставится *:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;func&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;args):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; args&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'abc'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;(1, 2, 3, 'abc')&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;(1,)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Как видно из примера, args - это &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/kortezhi-tuple.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;кортеж&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt; из всех переданных аргументов функции, и с переменной можно работать также, как и с кортежем.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Функция может принимать и произвольное число именованных аргументов, тогда перед именем ставится **:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#06287e;&quot;&gt;func&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;**&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;kwargs):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;... &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; kwargs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, b&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, c&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;{'a': 1, 'c': 3, 'b': 2}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;{}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'python'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;{'a': 'python'}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;В переменной kwargs у нас хранится &lt;/span&gt;&lt;a href=&quot;https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; text-decoration: underline; color:#0000ff; background-color:transparent;&quot;&gt;словарь&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;, с которым мы, опять-таки, можем делать все, что нам заблагорассудится.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:140%; background-color:#ffffff;&quot;&gt;&lt;a name=&quot;lambda&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;А&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:600; color:#454545;&quot;&gt;нонимные функции, инструкция lambda&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;Анонимные функции могут содержать лишь одно выражение, но и выполняются они быстрее. Анонимные функции создаются с помощью инструкции &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; font-weight:696; color:#454545;&quot;&gt;lambda&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;. Кроме этого, их не обязательно присваивать переменной, как делали мы инструкцией def func():&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;lambda&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; x, y: x &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; y&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;3&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'a'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'b'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;'ab'&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;lambda&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; x, y: x &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; y)(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;3&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;lambda&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; x, y: x &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;+&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; y)(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'a'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#4070a0;&quot;&gt;'b'&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;'ab'&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:7px; margin-bottom:7px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545;&quot;&gt;lambda функции, в отличие от обычной, не требуется инструкция return, а в остальном, ведет себя точно так же:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica,sans-serif'; font-size:14pt; color:#454545; background-color:#eeffcc;&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:30px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#007020;&quot;&gt;lambda&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#666666;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;args: args&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; font-weight:696; color:#c65d09;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;func(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#208050;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#454545;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:24px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%; background-color:#eeffcc;&quot;&gt;&lt;span style=&quot; font-family:'Courier 10 Pitch,Courier,monospace'; font-size:14pt; color:#333333;&quot;&gt;(1, 2, 3, 4)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>640</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>200</red>
+          <green>12</green>
+          <blue>62</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string>К тесту</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p13">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p5">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p8">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>7 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p12">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>11 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p10">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p14">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>13 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p4">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p6">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p15">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>14 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p7">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>80</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>0</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Навигация&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p16">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p9">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8 урок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p11">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>100</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9 урок</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>170</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;№ Вашего урока&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="l1">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>220</y>
+      <width>201</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>933</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
